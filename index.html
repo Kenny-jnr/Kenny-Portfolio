@@ -4,11 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="screen.css">
   </head>
+
   <body>
-    <h1>Heading</h1>
+    <main>
+      <div class="name">
+        <a href="#about"><h1>KENNY UMOBI</h1></a>
+        <p>COMPUTER SCIENCE STUDENT + JACKSON IT CDP</p>
+      </div>
+      <nav id="navigation">
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="profile">
+        <div class="self-image">
+          <img src="Images/kenny.png" alt="Picture of Kenny">
+        </div>
+        <div class="profile-text">
+          <p class="profile-p1">Hey I'm</p>
+          <h2 class="profile-header">Kenny</h2>
+          <p class="profile-p2">student at Michigan State University</p>
+          <button class="profile-button" onclick="location.href='./#resume'">
+            View Resume
+          </button>
+        </div>
+        <div class="socials">
+          <img src="Images/linkedin.jpeg" alt="linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/ekene-umobi'">
+          <img src="Images/github.jpeg" alt="github profile" class="icon" onclick="location.href='https://github.com/Kenny-jnr'">
+        </div>
+      </section>
+    </main>
+
     <script src="index.js"></script>
   </body>
 </html>
