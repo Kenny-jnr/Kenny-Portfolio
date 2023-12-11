@@ -222,6 +222,11 @@ strong {
 
 /* Experience */
 
+.experience-header {
+  margin-top: 1rem;
+  text-align: center;
+}
+
 .msu {
   margin-top: 4rem;
   display: flex;
