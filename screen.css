@@ -53,12 +53,18 @@ nav {
   justify-content:space-around;
   align-items: center;
   height: 5vh;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
+
+
 
 .nav-links {
   gap: 2.2em;
   list-style: none;
   font-size: 1.2rem;
+  position: sticky;
 }
 
 a {
@@ -90,25 +96,24 @@ section {
 .profile {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 4rem;
   height: 80vh;
 }
 
 .self-image {
-  display: flex;
-  height: 300px;
-  width: 300px;
-  margin: auto 0;
-  /* border-radius: 50%; */
-  /* overflow: hidden; */
+  margin-top: 10rem;
+  background: no-repeat bottom / cover url('Images/kenny.png');
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
 }
-
-
-
 
 .profile-text {
   align-self: center;
   text-align: center;
+  display: flex;
+  gap: 0;
+  flex-direction: column;
 }
 
 .profile-text p {
@@ -117,15 +122,18 @@ section {
 
 .profile-p1 {
   text-align: center;
+  color: grey;
+  font-size: 1rem;
 }
 
-.profile-p1 {
-  font-size: 1.75rem;
+.profile-p2 {
+  color: grey;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
 .profile-header {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -148,13 +156,25 @@ section {
   gap: 1rem;
 }
 
-.profile_button {
+.btn {
+  
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn:hover {
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  color: white;
+  background: rgb(0, 0, 0);
 }
 
 /* RESUME */
@@ -192,6 +212,7 @@ strong {
   display: flex;
   margin-bottom: 3rem;
   gap: 3rem;
+  padding-bottom: 7rem;
 }
 
 .snbc-image {
@@ -199,7 +220,36 @@ strong {
   height: 240px;
 }
 
+/* Experience */
 
+.msu {
+  margin-top: 4rem;
+  display: flex;
+  margin-bottom: 7rem;
+  gap: 3rem;
+}
 
+.wootlab {
+  margin-top: 4rem;
+  display: flex;
+  margin-bottom: 7rem;
+  padding-bottom: 7rem;
+  gap: 3rem;
+}
 
+.wootlab-image {
+  width: 240px;
+  height: 90px;
+}
 
+.jackson {
+  margin-top: 4rem;
+  display: flex;
+  margin-bottom: 7rem;
+  gap: 3rem;
+}
+
+.jackson-image {
+  width: 240px;
+  height: 70px;
+}
